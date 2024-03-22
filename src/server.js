@@ -11,5 +11,6 @@ app.use(express.json());
 
 /**Importar rutas*/
 app.use('/recetas',require('./routes/recetasRutas'));
+app.use('/ingredientes',require('./routes/rutasIngredientes'));
 
 app.listen(app.get('port'), ()=> console.log(`Servidor esuchado en ${app.get('port')}`));
